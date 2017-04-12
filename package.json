@@ -9,13 +9,13 @@
     "watch": "watchify -v -d -t [ reactify --es6 ] main.js -o compiled.js",
     "build": "NODE_ENV=production browserify -t [ reactify --es6 ] main.js | uglifyjs > compiled.js"
   },
-  "repository" :
-  { "type" : "git",
-   "url" : "https://github.com/estevanmontoya/Map-Locator.git"
-  },
   "author": "Estevan Montoya",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estevanmontoya/Map-Locator.git",
   "dependencies": {
+    "heroku": "^0.2.0",
     "moment": "^2.18.1",
     "react": "^0.13.2"
   },
