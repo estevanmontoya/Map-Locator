@@ -10,8 +10,8 @@
     "build": "NODE_ENV=production browserify -t [ reactify --es6 ] main.js | uglifyjs > compiled.js"
   },
   "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/estevanmontoya/Map-Locator.git"
+  { "type" : "git",
+   "url" : "https://github.com/estevanmontoya/Map-Locator.git"
   },
   "author": "Estevan Montoya",
   "license": "MIT",
