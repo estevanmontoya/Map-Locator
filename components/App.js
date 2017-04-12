@@ -128,18 +128,13 @@ var App = React.createClass({
           <div>
             <h1>Map Locator</h1>
             <h3>Built using ReactJS</h3>
-            <p>This site is built by Estevan Montoya.</p>
-
+            <p>This site is built by Estevan Montoya. More work at: <a href='http://www.churchtech.co' target='_blank'>ChurchTech.co< /a> </p>
             <Search onSearch={this.searchForAddress} />
-
             <Map lat={this.state.mapCoordinates.lat} lng={this.state.mapCoordinates.lng} />
-
             <CurrentLocation address={this.state.currentAddress}
               favorite={this.isAddressInFavorites(this.state.currentAddress)}
               onFavoriteToggle={this.toggleFavorite} />
-
             <LocationList locations={this.state.favorites} activeLocationAddress={this.state.currentAddress} onClick={this.searchForAddress} />
-            
           </div>
         );
         
