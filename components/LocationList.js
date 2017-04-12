@@ -7,14 +7,14 @@ var LocationList = React.createClass({
     
     var self = this;
     
-    var locations = this.props.locations.map(function(i){
+    var locations = this.props.locations.map(function(l){
       
-      var active = self.props.activeLocationAddress == i.address;
+      var active = self.props.activeLocationAddress == l.address;
       
-      // Notive that we are passing the onClick callback of this
+      // Notice that we are passing the onClick callback of this
       // LocationList to each LocationItem.
       
-      return <LocationItem address={i.address} timestamp={i.timestamp}
+      return <LocationItem address={l.address} timestamp={l.timestamp}
         active={active} onClick={self.props.onClick} />
       
     });
